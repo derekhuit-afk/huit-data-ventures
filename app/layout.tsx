@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AgentWidget from '@/components/AgentWidget';
 
 export const metadata: Metadata = {
   title: "Huit Data Ventures — 25 Enterprise Intelligence Products",
@@ -11,7 +12,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body style={{ background: "#050810", color: "#E8EAF0", fontFamily: "monospace", margin: 0 }}>
         {children}
-      </body>
+            <AgentWidget />
+    </body>
     </html>
   );
 }
